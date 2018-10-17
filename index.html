@@ -1,17 +1,16 @@
 <html>
     <head>
-        <h1>Placeholder Title</h1>
-        <p>You have <span id="v0">0</span> internet points</p>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     <body>
+        <h1>Placeholder Title</h1>
+        <p>You have <span id="v0">0</span> internet points</p>
         <script src="game.js"></script>
-        <div style="display: inline-grid; column-gap: 20px">
-            <p>Shitposts are giving <span id="boost">0</span>% boost to internet points</p>
+        <div class="grid-container">
+            <p id="shitpostDesc">Shitposts are giving <span id="boost">0</span>% boost to internet points</p>
             <button id="shitpostButton" onclick="shitpost()">Shitpost</button>
-        </div>
-        <div style="display: inline-grid; column-count: 2">
-            <p>You are earning <span id="v1">0</span> internet points for each shitpost</p>
-            <button id="clickerUpgrade" onclick="upgradeClicker()">Upgrade Clicker</button>
+            <p id="upgradeDesc" hidden>You are earning <span id="v1">0</span> internet points for each shitpost</p>
+            <button id="clickerUpgrade" hidden onclick="upgradeClicker()">Upgrade Clicker</button>
         </div>
     </body>
 </html>
