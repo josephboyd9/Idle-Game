@@ -4,13 +4,19 @@
     </head>
     <body>
         <h1>Placeholder Title</h1>
-        <p>You have <span id="v0">0</span> internet points</p>
+        <p>V0 = <span id="v0">0</span></p>
+        <p>boost = <span id="boost">0</span>%</p>
         <script src="game.js"></script>
         <div class="grid-container">
-            <p id="shitpostDesc">Shitposts are giving <span id="boost">0</span>% boost to internet points</p>
-            <button id="shitpostButton" onclick="shitpost()">Shitpost</button>
-            <p id="upgradeDesc" hidden>You are earning <span id="v1">0</span> internet points for each shitpost</p>
-            <button id="clickerUpgrade" hidden onclick="upgradeClicker()">Upgrade Clicker</button>
+            <p id="v1Desc">V1 = <span id="v1">0</span></p>
+            <button id="v1Button" onclick="incV(1)">increase V1</button>
+            <p id="v2Desc" hidden>V2 = <span id="v2">0</span></p>
+            <button id="v2Button" hidden onclick="incV(2)">Increase V2</button>
+            <p id="v3Desc">V3 = <span id="v3">0</span></p>
+            <button id="v3Button" onclick="incV(3)">Increase V3</button>
+            <p id="v4Desc">V4 = <span id="v4">0</span></p>
+            <button id="v4Button" onclick="incV(4)">Increase V4</button>
+            <button id="boostButton" class="boost-button" onclick="boost()">boost</button>
         </div>
     </body>
 </html>
